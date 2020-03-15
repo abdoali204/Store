@@ -1,0 +1,11 @@
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\StoreBook.Domains.dll.config
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\StoreBook.Domains.dll
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\StoreBook.Domains.pdb
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\EntityFramework.dll
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\EntityFramework.SqlServer.dll
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\EntityFramework.xml
+E:\project\StoreBook\StoreBook.Domains\bin\Debug\EntityFramework.SqlServer.xml
+E:\project\StoreBook\StoreBook.Domains\obj\Debug\StoreBook.Domain.csprojAssemblyReference.cache
+E:\project\StoreBook\StoreBook.Domains\obj\Debug\StoreBook.Domain.csproj.CopyComplete
+E:\project\StoreBook\StoreBook.Domains\obj\Debug\StoreBook.Domains.dll
+E:\project\StoreBook\StoreBook.Domains\obj\Debug\StoreBook.Domains.pdb

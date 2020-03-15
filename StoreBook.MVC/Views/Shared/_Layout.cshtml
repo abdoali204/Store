@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        aside { 
+            background:#30385c;
+            padding-top:20px;
+            padding-bottom:20px;
+            border-radius:5px;
+            
+}
+        body {
+        
+background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+        .panel {
+            background-color:inherit;
+        }
+
+    </style>
+</head>
+<body>
+    @Html.Partial("_Navbar")
+    <div class="container-fluid body-content">
+        <div class="row panel ">
+          <aside id="categories" class="col-xs-3">  
+                @Html.Action("Menu", "Nav")
+            </aside>              
+         <div class="col-xs-8">
+                @RenderBody()
+            </div>
+        </div>
+        <footer class="text-center row">
+            <p>&copy; @DateTime.Now.Year - Store</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+        
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@model PagedList.PagedList<StoreBook.Domain.Entities.Product>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="bodyArea">
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_ProductSummary", item)
+    }
+
+
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("List", new { page }))
+</div>

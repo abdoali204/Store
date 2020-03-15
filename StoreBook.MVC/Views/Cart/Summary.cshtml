@@ -1,0 +1,9 @@
+﻿@model StoreBook.Domain.Entities.Cart
+<div class="navbar-right"> 
+    <a href="/Cart/Index?returnUrl=@Request.Url.PathAndQuery" class="btn btn-link navbar-btn"><span class="glyphicon text-info glyphicon-shopping-cart"></span> Checkout </a>
+</div>
+
+<div class="navbar-text navbar-right"> 
+    <b>Your cart:</b>  @Model.Lines.Sum(x => x.Quantity) item(s),
+    @Model.ComputeTotalValue().ToString("c")
+ </div>
